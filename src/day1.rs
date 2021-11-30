@@ -44,11 +44,10 @@ fn process(input: &str) -> Vec<i16> {
         .map(|c| {
             if c == '(' {
                 running_total += 1;
-                running_total
             } else {
                 running_total += -1;
-                running_total
             }
+            running_total
         })
         .collect()
 }
